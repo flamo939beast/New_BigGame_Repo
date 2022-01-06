@@ -470,3 +470,4 @@ Received Import Request.
 Start importing Assets/_Course Library/_Prefabs/swinget_2.prefab using Guid(a91a7a06daffe5d4cb9bccdcddc83ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f640cb2df29dec8a24f0e99262ae93') in 0.017384 seconds 
   Import took 0.037598 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
