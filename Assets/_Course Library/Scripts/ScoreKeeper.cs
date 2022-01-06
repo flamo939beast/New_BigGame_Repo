@@ -21,6 +21,6 @@ public class ScoreKeeper : MonoBehaviour
     public void UpdateScore()
     {
         scoreValue += 5;
-        scoreText.text = scoreValue.ToString;
+        scoreText.text = scoreValue.ToString();
     }
 }
