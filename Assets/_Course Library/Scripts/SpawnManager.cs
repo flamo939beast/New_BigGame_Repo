@@ -9,6 +9,7 @@ public class SpawnManager : MonoBehaviour
     public float spawnPosZ = 20;
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
+    public float spawnPosY = .5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnEnemy()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), spawnPosY, spawnPosZ);
         int enemyIndex = Random.Range(0, enemyPrefabs.Length);
         Instantiate(enemyPrefabs[enemyIndex], spawnPos, enemyPrefabs[enemyIndex].transform.rotation);
     }
