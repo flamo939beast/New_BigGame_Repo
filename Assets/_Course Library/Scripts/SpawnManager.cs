@@ -9,6 +9,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] enemyPrefabs;
     public float spawnRangeX = 5;
     public float spawnPosZ = 20;
+    public float spawnPosY = 0.5f;
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
     public float spawnPosY = .5f;
