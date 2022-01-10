@@ -266,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8143960147044085347, guid: 63204328731693d4abe53e402271756e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.341
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 8143960147044085347, guid: 63204328731693d4abe53e402271756e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -274,7 +274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8143960147044085347, guid: 63204328731693d4abe53e402271756e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.054
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 8143960147044085347, guid: 63204328731693d4abe53e402271756e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -894,16 +894,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e88e2495345d340931e91ce67d8e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCount: 0
-  waveNumber: 1
   enemyPrefabs:
   - {fileID: 8813254433622226137, guid: 63204328731693d4abe53e402271756e, type: 3}
   - {fileID: 1807287647454535328, guid: a91a7a06daffe5d4cb9bccdcddc83ad8, type: 3}
   spawnRangeX: 5
   spawnPosZ: 20
+  spawnPosY: 0.5
   startDelay: 2
   spawnInterval: 2
-  spawnPosY: 0.5
 --- !u!1 &1475582808
 GameObject:
   m_ObjectHideFlags: 0
