@@ -21,7 +21,7 @@ public class Scoreingame : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemies"))
         {
-            Debug.Log("you hit an enemy");
+           // Debug.Log("you hit an enemy");
             scoreText.GetComponent<ScoreKeeper>().UpdateScore();
         }
     }
