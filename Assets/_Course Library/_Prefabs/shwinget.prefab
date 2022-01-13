@@ -305,8 +305,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8143960147044085347}
   - component: {fileID: 2757857430274686019}
-  - component: {fileID: 3647004764404216566}
   - component: {fileID: -7301635492800194813}
+  - component: {fileID: 8716436149244685554}
+  - component: {fileID: 1647898235762928141}
   m_Layer: 0
   m_Name: shwinget
   m_TagString: Enemies
@@ -345,18 +346,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &3647004764404216566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8813254433622226137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b779500ced2122c49b38d565f64cabf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &-7301635492800194813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -370,3 +359,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8716436149244685554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813254433622226137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132c8d2c44dc64240a1c47853eafcc26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1647898235762928141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813254433622226137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b779500ced2122c49b38d565f64cabf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
