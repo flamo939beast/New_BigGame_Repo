@@ -6,6 +6,10 @@ using UnityEngine;
 /// </summary>
 public class LaunchProjectile : MonoBehaviour
 {
+    public float Delay = .01f;
+    public float Speed = .04f;
+
+
     [Tooltip("The projectile that's created")]
     public GameObject projectilePrefab = null;
 
@@ -21,6 +25,16 @@ public class LaunchProjectile : MonoBehaviour
 
         if (newObject.TryGetComponent(out Rigidbody rigidBody))
             ApplyForce(rigidBody);
+    }
+
+    public void Repeater()
+    {
+        InvokeRepeating("Fire", Delay, Speed);
+    }
+
+    public void CancelRepeater()
+    {
+        CancelInvoke();
     }
 
     private void ApplyForce(Rigidbody rigidBody)
