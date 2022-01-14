@@ -23,6 +23,11 @@ public class WallDamageScript : MonoBehaviour
         {
             TakeDamage(20);
         }
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void TakeDamage(int damage)
