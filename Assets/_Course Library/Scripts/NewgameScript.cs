@@ -2,12 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthScript : MonoBehaviour
+public class NewgameScript : MonoBehaviour
 {
-    
-    public float maxHealth = 100f;
-    public float currentHealth = 0f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +14,11 @@ public class HealthScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void NewGame()
+    {
+        Debug.Log("It's a new game");
+
     }
 }
