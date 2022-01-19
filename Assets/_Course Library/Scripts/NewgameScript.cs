@@ -13,7 +13,12 @@ public class NewgameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            GameObject[] allenemies = GameObject.FindGameObjectsWithTag("Enemies");
+            foreach (GameObject dude in allenemies)
+                GameObject.Destroy(dude);
+        }
     }
 
     public void NewGame()

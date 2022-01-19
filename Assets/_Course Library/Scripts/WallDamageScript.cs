@@ -8,6 +8,7 @@ public class WallDamageScript : MonoBehaviour
     public int currentHealth;
 
     public HealthBar HealthBar;
+    public GameObject gameOverText;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,8 @@ public class WallDamageScript : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            Time.timeScale = 0;
+            gameOverText.SetActive(true);
         }
     }
 
