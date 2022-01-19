@@ -19,6 +19,9 @@ public class WaveSpawner : MonoBehaviour
     public float spawnPosY = 0.5f;
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
+    public GameObject gameOverText;
+    public GameObject Wall;
+    public int currentHealth;
 
 
     bool waveIsDone = true;
@@ -62,5 +65,20 @@ public class WaveSpawner : MonoBehaviour
         waveIsDone = true;
 
     }
+
+    public void NewGame()
+    {
+        Debug.Log("It's a new game");
+        GameObject[] allenemies = GameObject.FindGameObjectsWithTag("Enemies");
+        foreach (GameObject dude in allenemies)
+            GameObject.Destroy(dude);
+        waveCount = 1;
+        enemyCount = 1;
+        gameOverText.SetActive(false);
+        Time.timeScale = 1;
+        Wall.SetActive(true);
+        currentHealth = 100;
+    }
+    
 
 }
