@@ -42,4 +42,5 @@ public class LaunchProjectile : MonoBehaviour
         Vector3 force = startPoint.forward * launchSpeed;
         rigidBody.AddForce(force);
     }
+
 }
