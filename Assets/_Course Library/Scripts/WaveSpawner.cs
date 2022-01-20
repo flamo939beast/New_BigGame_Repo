@@ -6,7 +6,7 @@ using TMPro;
 public class WaveSpawner : MonoBehaviour
 {
     public TextMeshProUGUI waveCountText;
-    public int waveCount = 1;
+    public int waveCount = 0;
 
     public float spawnRate = 1.0f;
     public float timeBetweenWaves = 3.0f;
@@ -73,7 +73,7 @@ public class WaveSpawner : MonoBehaviour
         GameObject[] allenemies = GameObject.FindGameObjectsWithTag("Enemies");
         foreach (GameObject dude in allenemies)
             GameObject.Destroy(dude);
-        waveCount = 1;
+        waveCount = 0;
         enemyCount = 1;
         gameOverText.SetActive(false);
         Time.timeScale = 1;
