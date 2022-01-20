@@ -18,7 +18,11 @@ public class DestroyGameObject : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        if (other.CompareTag("Enemies"))
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+
     }
 }

@@ -18,6 +18,11 @@ public class WallDamageScript : MonoBehaviour
         HealthBar.setMaxHealth(maxHealth);
     }
 
+    void update()
+    {
+        
+    }
+
   //  Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
