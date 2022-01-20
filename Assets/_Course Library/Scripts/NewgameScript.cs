@@ -16,11 +16,11 @@ public class NewgameScript : MonoBehaviour
         
     }
 
-    public void NewGame()
-    {
-        Debug.Log("It's a new game");
-        GameObject[] allenemies = GameObject.FindGameObjectsWithTag("Enemies");
-        foreach (GameObject dude in allenemies)
-            GameObject.Destroy(dude);
-    }
+    //public void NewGame()
+  //  {
+    //    Debug.Log("It's a new game");
+    //    GameObject[] allenemies = GameObject.FindGameObjectsWithTag("Enemies");
+    //    foreach (GameObject dude in allenemies)
+     //       GameObject.Destroy(dude);
+   // }
 }
