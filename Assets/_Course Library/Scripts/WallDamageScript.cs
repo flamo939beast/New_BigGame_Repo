@@ -11,14 +11,14 @@ public class WallDamageScript : MonoBehaviour
     public GameObject gameOverText;
     public GameObject Wall;
 
-    // Start is called before the first frame update
+   // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         HealthBar.setMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
+  //  Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemies"))
@@ -40,6 +40,6 @@ public class WallDamageScript : MonoBehaviour
         HealthBar.setHealth(currentHealth);
     }
 
-   
+
 }
 

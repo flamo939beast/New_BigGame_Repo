@@ -21,14 +21,15 @@ public class WaveSpawner : MonoBehaviour
     public float spawnInterval = 1.5f;
     public GameObject gameOverText;
     public GameObject Wall;
-    public int currentHealth;
+    
+    
 
 
     bool waveIsDone = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -77,8 +78,8 @@ public class WaveSpawner : MonoBehaviour
         gameOverText.SetActive(false);
         Time.timeScale = 1;
         Wall.SetActive(true);
-        currentHealth = 100;
+        Wall.GetComponent<WallDamageScript>().currentHealth = 100;
+
     }
-    
 
 }
