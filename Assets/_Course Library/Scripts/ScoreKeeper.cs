@@ -23,4 +23,9 @@ public class ScoreKeeper : MonoBehaviour
         scoreValue += 5;
         scoreText.text = "Score: " + scoreValue.ToString();
     }
+
+    public void NewGame()
+    {
+        scoreValue = 0;
+    }
 }

@@ -21,7 +21,9 @@ public class WaveSpawner : MonoBehaviour
     public float spawnInterval = 1.5f;
     public GameObject gameOverText;
     public GameObject Wall;
-    
+    public int maxHealth = 100;
+    public HealthBar HealthBar;
+
     
 
 
@@ -79,7 +81,9 @@ public class WaveSpawner : MonoBehaviour
         Time.timeScale = 1;
         Wall.SetActive(true);
         Wall.GetComponent<WallDamageScript>().currentHealth = 100;
-
+        HealthBar.setMaxHealth(100);
+        
+        
     }
 
 }

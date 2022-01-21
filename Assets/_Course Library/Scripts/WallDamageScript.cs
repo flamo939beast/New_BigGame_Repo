@@ -20,7 +20,10 @@ public class WallDamageScript : MonoBehaviour
 
     void update()
     {
-        
+        if(currentHealth > 99)
+        {
+            HealthBar.setMaxHealth(maxHealth);
+        }
     }
 
   //  Update is called once per frame
